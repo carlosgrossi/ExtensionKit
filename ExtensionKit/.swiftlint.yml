@@ -3,6 +3,7 @@ disabled_rules: # rule identifiers to exclude from running
   - conditional_returns_on_newline
   - no_extension_access_modifier
   - number_separator
+  - syntactic_sugar
 
 opt_in_rules: # some rules are only opt-in
   - empty_count
@@ -26,6 +27,7 @@ opt_in_rules: # some rules are only opt-in
   - prohibited_super_call
   - redundant_nil_coalescing
   - switch_case_on_newline
+
 
 line_length:
   warning: 190

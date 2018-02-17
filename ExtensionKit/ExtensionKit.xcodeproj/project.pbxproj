@@ -13,6 +13,8 @@
 		0E1611492037622D00F40E7E /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1611482037622D00F40E7E /* URLTests.swift */; };
 		0EAD120420387CBE00FC1B06 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD120320387CBE00FC1B06 /* Date.swift */; };
 		0EAD120620387CEF00FC1B06 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD120520387CEF00FC1B06 /* DateTests.swift */; };
+		0EAD12082038C1E400FC1B06 /* JSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */; };
+		0EAD120A2038C21900FC1B06 /* JSONSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD12092038C21900FC1B06 /* JSONSerializationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		0E1611482037622D00F40E7E /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
 		0EAD120320387CBE00FC1B06 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		0EAD120520387CEF00FC1B06 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
+		0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerialization.swift; sourceTree = "<group>"; };
+		0EAD12092038C21900FC1B06 /* JSONSerializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 			children = (
 				0EAD120320387CBE00FC1B06 /* Date.swift */,
 				0E161145203760B800F40E7E /* URL.swift */,
+				0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			children = (
 				0E1611482037622D00F40E7E /* URLTests.swift */,
 				0EAD120520387CEF00FC1B06 /* DateTests.swift */,
+				0EAD12092038C21900FC1B06 /* JSONSerializationTests.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E161146203760B800F40E7E /* URL.swift in Sources */,
+				0EAD12082038C1E400FC1B06 /* JSONSerialization.swift in Sources */,
 				0EAD120420387CBE00FC1B06 /* Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E1611492037622D00F40E7E /* URLTests.swift in Sources */,
+				0EAD120A2038C21900FC1B06 /* JSONSerializationTests.swift in Sources */,
 				0EAD120620387CEF00FC1B06 /* DateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
