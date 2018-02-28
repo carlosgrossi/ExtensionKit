@@ -25,6 +25,7 @@
 		0E1C3FA3204718E100DBCB4D /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FA2204718E100DBCB4D /* CALayer.swift */; };
 		0E1C3FA62047194B00DBCB4D /* SKProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FA52047194A00DBCB4D /* SKProduct.swift */; };
 		0E1C3FA92047226F00DBCB4D /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FA82047226F00DBCB4D /* Array.swift */; };
+		0E1C3FAB2047229D00DBCB4D /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FAA2047229D00DBCB4D /* Dictionary.swift */; };
 		0EAD120420387CBE00FC1B06 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD120320387CBE00FC1B06 /* Date.swift */; };
 		0EAD120620387CEF00FC1B06 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD120520387CEF00FC1B06 /* DateTests.swift */; };
 		0EAD12082038C1E400FC1B06 /* JSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */; };
@@ -63,6 +64,7 @@
 		0E1C3FA2204718E100DBCB4D /* CALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		0E1C3FA52047194A00DBCB4D /* SKProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKProduct.swift; sourceTree = "<group>"; };
 		0E1C3FA82047226F00DBCB4D /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		0E1C3FAA2047229D00DBCB4D /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		0EAD120320387CBE00FC1B06 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		0EAD120520387CEF00FC1B06 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerialization.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				0E1C3FA82047226F00DBCB4D /* Array.swift */,
+				0E1C3FAA2047229D00DBCB4D /* Dictionary.swift */,
 			);
 			path = "Swift Structures";
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				0E1C3F942047166600DBCB4D /* NumberFormatter.swift in Sources */,
 				0E1C3F8A20470DF800DBCB4D /* NotificationCenter.swift in Sources */,
 				0E1C3FA3204718E100DBCB4D /* CALayer.swift in Sources */,
+				0E1C3FAB2047229D00DBCB4D /* Dictionary.swift in Sources */,
 				0E1C3F8E2047131200DBCB4D /* NSBundleResourceRequest.swift in Sources */,
 				0E1C3F98204717A900DBCB4D /* URLRequest.swift in Sources */,
 			);
