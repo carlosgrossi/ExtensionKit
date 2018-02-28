@@ -35,6 +35,7 @@
 		0E1C3FBB2047295D00DBCB4D /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FBA2047295D00DBCB4D /* UIImage.swift */; };
 		0E1C3FBD2047297A00DBCB4D /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FBC2047297A00DBCB4D /* UIImageView.swift */; };
 		0E1C3FBF20472A2D00DBCB4D /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FBE20472A2C00DBCB4D /* UILabel.swift */; };
+		0E1C3FC120472A4A00DBCB4D /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FC020472A4A00DBCB4D /* UINavigationController.swift */; };
 		0EAD120420387CBE00FC1B06 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD120320387CBE00FC1B06 /* Date.swift */; };
 		0EAD120620387CEF00FC1B06 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD120520387CEF00FC1B06 /* DateTests.swift */; };
 		0EAD12082038C1E400FC1B06 /* JSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */; };
@@ -83,6 +84,7 @@
 		0E1C3FBA2047295D00DBCB4D /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		0E1C3FBC2047297A00DBCB4D /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		0E1C3FBE20472A2C00DBCB4D /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		0E1C3FC020472A4A00DBCB4D /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		0EAD120320387CBE00FC1B06 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		0EAD120520387CEF00FC1B06 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerialization.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				0E1C3FBA2047295D00DBCB4D /* UIImage.swift */,
 				0E1C3FBC2047297A00DBCB4D /* UIImageView.swift */,
 				0E1C3FBE20472A2C00DBCB4D /* UILabel.swift */,
+				0E1C3FC020472A4A00DBCB4D /* UINavigationController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				0E1C3F9A204717EB00DBCB4D /* URLSession.swift in Sources */,
 				0E1C3FA62047194B00DBCB4D /* SKProduct.swift in Sources */,
 				0E1C3FA92047226F00DBCB4D /* Array.swift in Sources */,
+				0E1C3FC120472A4A00DBCB4D /* UINavigationController.swift in Sources */,
 				0E1C3FBD2047297A00DBCB4D /* UIImageView.swift in Sources */,
 				0E161146203760B800F40E7E /* URL.swift in Sources */,
 				0EAD12082038C1E400FC1B06 /* JSONSerialization.swift in Sources */,
