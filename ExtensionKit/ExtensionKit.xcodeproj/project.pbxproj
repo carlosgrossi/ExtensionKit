@@ -11,6 +11,8 @@
 		0E16113620375E4D00F40E7E /* ExtensionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E16112820375E4D00F40E7E /* ExtensionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E161146203760B800F40E7E /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E161145203760B800F40E7E /* URL.swift */; };
 		0E1611492037622D00F40E7E /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1611482037622D00F40E7E /* URLTests.swift */; };
+		0E1C3F8A20470DF800DBCB4D /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3F8920470DF800DBCB4D /* NotificationCenter.swift */; };
+		0E1C3F8C20470E1900DBCB4D /* NotificationCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3F8B20470E1900DBCB4D /* NotificationCenterTests.swift */; };
 		0EAD120420387CBE00FC1B06 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD120320387CBE00FC1B06 /* Date.swift */; };
 		0EAD120620387CEF00FC1B06 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD120520387CEF00FC1B06 /* DateTests.swift */; };
 		0EAD12082038C1E400FC1B06 /* JSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */; };
@@ -35,6 +37,8 @@
 		0E16113520375E4D00F40E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E161145203760B800F40E7E /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		0E1611482037622D00F40E7E /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
+		0E1C3F8920470DF800DBCB4D /* NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
+		0E1C3F8B20470E1900DBCB4D /* NotificationCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterTests.swift; sourceTree = "<group>"; };
 		0EAD120320387CBE00FC1B06 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		0EAD120520387CEF00FC1B06 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerialization.swift; sourceTree = "<group>"; };
@@ -109,8 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				0EAD120320387CBE00FC1B06 /* Date.swift */,
-				0E161145203760B800F40E7E /* URL.swift */,
 				0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */,
+				0E1C3F8920470DF800DBCB4D /* NotificationCenter.swift */,
+				0E161145203760B800F40E7E /* URL.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -118,9 +123,10 @@
 		0E1611472037621600F40E7E /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				0E1611482037622D00F40E7E /* URLTests.swift */,
 				0EAD120520387CEF00FC1B06 /* DateTests.swift */,
 				0EAD12092038C21900FC1B06 /* JSONSerializationTests.swift */,
+				0E1C3F8B20470E1900DBCB4D /* NotificationCenterTests.swift */,
+				0E1611482037622D00F40E7E /* URLTests.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 				0E161146203760B800F40E7E /* URL.swift in Sources */,
 				0EAD12082038C1E400FC1B06 /* JSONSerialization.swift in Sources */,
 				0EAD120420387CBE00FC1B06 /* Date.swift in Sources */,
+				0E1C3F8A20470DF800DBCB4D /* NotificationCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +274,7 @@
 				0E1611492037622D00F40E7E /* URLTests.swift in Sources */,
 				0EAD120A2038C21900FC1B06 /* JSONSerializationTests.swift in Sources */,
 				0EAD120620387CEF00FC1B06 /* DateTests.swift in Sources */,
+				0E1C3F8C20470E1900DBCB4D /* NotificationCenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
