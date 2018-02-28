@@ -188,4 +188,21 @@ public extension UIView {
 		self.endEditing(true)
 	}
 	
+    public func taggedSubviews() -> Dictionary<Int, UIView> {
+        var taggedSubviews: Dictionary<Int, UIView> = Dictionary()
+        for subview in self.subviews.filter({ $0.tag != 0 }) {
+            taggedSubviews.updateValue(subview, forKey: subview.tag)
+        }
+        return taggedSubviews
+    }
+    
+    public func firstAvailableTag() -> Int {
+        var availableTag = Int.max
+        let taggedSubviews = self.taggedSubviews()
+        while taggedSubviews[availableTag] != nil {
+            availableTag -= 1
+        }
+        return availableTag
+    }
+    
 }
