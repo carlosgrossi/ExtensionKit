@@ -29,6 +29,7 @@
 		0E1C3FAD204726FE00DBCB4D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FAC204726FE00DBCB4D /* String.swift */; };
 		0E1C3FAF2047274B00DBCB4D /* UInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FAE2047274B00DBCB4D /* UInt.swift */; };
 		0E1C3FB3204727C500DBCB4D /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FB2204727C500DBCB4D /* NSLayoutConstraint.swift */; };
+		0E1C3FB52047281B00DBCB4D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FB42047281B00DBCB4D /* UIApplication.swift */; };
 		0EAD120420387CBE00FC1B06 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD120320387CBE00FC1B06 /* Date.swift */; };
 		0EAD120620387CEF00FC1B06 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD120520387CEF00FC1B06 /* DateTests.swift */; };
 		0EAD12082038C1E400FC1B06 /* JSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */; };
@@ -71,6 +72,7 @@
 		0E1C3FAC204726FE00DBCB4D /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		0E1C3FAE2047274B00DBCB4D /* UInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UInt.swift; sourceTree = "<group>"; };
 		0E1C3FB2204727C500DBCB4D /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
+		0E1C3FB42047281B00DBCB4D /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		0EAD120320387CBE00FC1B06 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		0EAD120520387CEF00FC1B06 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerialization.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				0E1C3FB2204727C500DBCB4D /* NSLayoutConstraint.swift */,
+				0E1C3FB42047281B00DBCB4D /* UIApplication.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				0E1C3FAF2047274B00DBCB4D /* UInt.swift in Sources */,
 				0E1C3FAD204726FE00DBCB4D /* String.swift in Sources */,
 				0E1C3F8A20470DF800DBCB4D /* NotificationCenter.swift in Sources */,
+				0E1C3FB52047281B00DBCB4D /* UIApplication.swift in Sources */,
 				0E1C3FA3204718E100DBCB4D /* CALayer.swift in Sources */,
 				0E1C3FAB2047229D00DBCB4D /* Dictionary.swift in Sources */,
 				0E1C3F8E2047131200DBCB4D /* NSBundleResourceRequest.swift in Sources */,
