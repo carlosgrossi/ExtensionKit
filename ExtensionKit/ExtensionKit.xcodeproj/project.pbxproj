@@ -31,6 +31,7 @@
 		0E1C3FB3204727C500DBCB4D /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FB2204727C500DBCB4D /* NSLayoutConstraint.swift */; };
 		0E1C3FB52047281B00DBCB4D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FB42047281B00DBCB4D /* UIApplication.swift */; };
 		0E1C3FB7204728DB00DBCB4D /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FB6204728DB00DBCB4D /* UICollectionView.swift */; };
+		0E1C3FB92047293800DBCB4D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3FB82047293800DBCB4D /* UIColor.swift */; };
 		0EAD120420387CBE00FC1B06 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD120320387CBE00FC1B06 /* Date.swift */; };
 		0EAD120620387CEF00FC1B06 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD120520387CEF00FC1B06 /* DateTests.swift */; };
 		0EAD12082038C1E400FC1B06 /* JSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */; };
@@ -75,6 +76,7 @@
 		0E1C3FB2204727C500DBCB4D /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
 		0E1C3FB42047281B00DBCB4D /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		0E1C3FB6204728DB00DBCB4D /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		0E1C3FB82047293800DBCB4D /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		0EAD120320387CBE00FC1B06 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		0EAD120520387CEF00FC1B06 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerialization.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				0E1C3FB2204727C500DBCB4D /* NSLayoutConstraint.swift */,
 				0E1C3FB42047281B00DBCB4D /* UIApplication.swift */,
 				0E1C3FB6204728DB00DBCB4D /* UICollectionView.swift */,
+				0E1C3FB82047293800DBCB4D /* UIColor.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				0EAD12082038C1E400FC1B06 /* JSONSerialization.swift in Sources */,
 				0E1C3F9D2047185800DBCB4D /* AVPlayer.swift in Sources */,
 				0E1C3F92204715CF00DBCB4D /* NSObject.swift in Sources */,
+				0E1C3FB92047293800DBCB4D /* UIColor.swift in Sources */,
 				0EAD120420387CBE00FC1B06 /* Date.swift in Sources */,
 				0E1C3F942047166600DBCB4D /* NumberFormatter.swift in Sources */,
 				0E1C3FAF2047274B00DBCB4D /* UInt.swift in Sources */,
