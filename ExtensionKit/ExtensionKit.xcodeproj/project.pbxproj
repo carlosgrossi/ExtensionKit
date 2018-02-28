@@ -20,6 +20,7 @@
 		0E1C3F96204716A700DBCB4D /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3F95204716A600DBCB4D /* TimeInterval.swift */; };
 		0E1C3F98204717A900DBCB4D /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3F97204717A900DBCB4D /* URLRequest.swift */; };
 		0E1C3F9A204717EB00DBCB4D /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3F99204717EB00DBCB4D /* URLSession.swift */; };
+		0E1C3F9D2047185800DBCB4D /* AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C3F9C2047185800DBCB4D /* AVPlayer.swift */; };
 		0EAD120420387CBE00FC1B06 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD120320387CBE00FC1B06 /* Date.swift */; };
 		0EAD120620387CEF00FC1B06 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD120520387CEF00FC1B06 /* DateTests.swift */; };
 		0EAD12082038C1E400FC1B06 /* JSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */; };
@@ -53,6 +54,7 @@
 		0E1C3F95204716A600DBCB4D /* TimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
 		0E1C3F97204717A900DBCB4D /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
 		0E1C3F99204717EB00DBCB4D /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		0E1C3F9C2047185800DBCB4D /* AVPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayer.swift; sourceTree = "<group>"; };
 		0EAD120320387CBE00FC1B06 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		0EAD120520387CEF00FC1B06 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		0EAD12072038C1E400FC1B06 /* JSONSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerialization.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		0E16112720375E4D00F40E7E /* ExtensionKit */ = {
 			isa = PBXGroup;
 			children = (
+				0E1C3F9B2047183B00DBCB4D /* AVFoundation */,
 				0E1611442037605000F40E7E /* Foundation */,
 				0E16114220375FEE00F40E7E /* Framework Support */,
 			);
@@ -150,6 +153,14 @@
 				0E1611482037622D00F40E7E /* URLTests.swift */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		0E1C3F9B2047183B00DBCB4D /* AVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				0E1C3F9C2047185800DBCB4D /* AVPlayer.swift */,
+			);
+			path = AVFoundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 				0E1C3F9A204717EB00DBCB4D /* URLSession.swift in Sources */,
 				0E161146203760B800F40E7E /* URL.swift in Sources */,
 				0EAD12082038C1E400FC1B06 /* JSONSerialization.swift in Sources */,
+				0E1C3F9D2047185800DBCB4D /* AVPlayer.swift in Sources */,
 				0E1C3F92204715CF00DBCB4D /* NSObject.swift in Sources */,
 				0EAD120420387CBE00FC1B06 /* Date.swift in Sources */,
 				0E1C3F942047166600DBCB4D /* NumberFormatter.swift in Sources */,
