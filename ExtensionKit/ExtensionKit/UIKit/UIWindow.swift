@@ -12,18 +12,18 @@ extension UIWindow {
 	
     public var statusBarBackgroundColor: UIColor? {
         set {
-            self.subviews.first(where: { $0.tag == 99 })?.removeFromSuperview()
+            self.subviews.first(where: { $0.tag == Int.max })?.removeFromSuperview()
             
             guard newValue != nil else { return }
             let statusBarBackgroundView = UIView()
             statusBarBackgroundView.backgroundColor = newValue
-            statusBarBackgroundView.tag = 99
+            statusBarBackgroundView.tag = Int.max
             self.addSubview(statusBarBackgroundView)
             _ = self.applyStandardConstraints(onSubview: statusBarBackgroundView, attributes: [.leading, .top, .trailing])
             _ = statusBarBackgroundView.applyHeightConstraint(height: UIApplication.shared.statusBarFrame.height)
         }
         get {
-            return self.subviews.first(where: { $0.tag == 99 })?.backgroundColor
+            return self.subviews.first(where: { $0.tag == Int.max })?.backgroundColor
         }
     }
     
