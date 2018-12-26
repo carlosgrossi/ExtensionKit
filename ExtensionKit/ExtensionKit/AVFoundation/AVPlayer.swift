@@ -15,7 +15,7 @@ public extension AVPlayer {
 		var avPlayer: AVPlayer?
 		
 		do {
-			try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category(rawValue: convertFromAVAudioSessionCategory(.ambient)), mode: .default, options: .defaultToSpeaker)
 			try AVAudioSession.sharedInstance().setActive(true)
 			guard let videoPath = Bundle.main.path(forResource: videoName, ofType: ofType) else { return (nil, nil) }
 			
@@ -33,12 +33,16 @@ public extension AVPlayer {
 			backgroundView?.backgroundColor = UIColor.clear
 			backgroundView?.layer.addSublayer(avPlayerLayer)
 			
-			avPlayer?.seek(to: kCMTimeZero)
+			avPlayer?.seek(to: CMTime.zero)
 			avPlayer?.volume = 0.0
-			avPlayer?.actionAtItemEnd = AVPlayerActionAtItemEnd.none
+			avPlayer?.actionAtItemEnd = AVPlayer.ActionAtItemEnd.none
 		} catch {
 		}
 		return (backgroundView, avPlayer)
 	}
 	
+}
+
+public func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
+	return input.rawValue
 }

@@ -18,13 +18,13 @@ public extension UIApplication {
 	
 	@available(iOS 9.0, *)
 	func appendShortcutItem(ofType type: String, localizedTitle: String, localizedSubtitle: String, icon: UIApplicationShortcutIcon? = nil, userInfo: [AnyHashable: Any]? = nil) {
-		appendShortcutItem(UIMutableApplicationShortcutItem(type: type, localizedTitle: localizedTitle, localizedSubtitle: localizedSubtitle, icon: icon, userInfo: userInfo))
+		appendShortcutItem(UIMutableApplicationShortcutItem(type: type, localizedTitle: localizedTitle, localizedSubtitle: localizedSubtitle, icon: icon, userInfo: userInfo as? [String: NSSecureCoding]))
 	}
 	
 	@available(iOS 9.0, *)
 	func appendShortcutItem(ofType type: String, localizedTitle: String, localizedSubtitle: String, iconNamed templateImageName: String? = nil, userInfo: [AnyHashable: Any]? = nil) {
 		let icon = UIApplicationShortcutIcon(templateImageName: templateImageName ?? "")
-		appendShortcutItem(UIMutableApplicationShortcutItem(type: type, localizedTitle: localizedTitle, localizedSubtitle: localizedSubtitle, icon: icon, userInfo: userInfo))
+		appendShortcutItem(UIMutableApplicationShortcutItem(type: type, localizedTitle: localizedTitle, localizedSubtitle: localizedSubtitle, icon: icon, userInfo: userInfo as? [String: NSSecureCoding]))
 	}
 	
 	@available(iOS 9.0, *)

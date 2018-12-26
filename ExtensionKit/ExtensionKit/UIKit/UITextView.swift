@@ -8,9 +8,9 @@
 
 import Foundation
 
-public extension UITextView {
+extension UITextView {
 	
-	override open var contentSize: CGSize {
+    override open var contentSize: CGSize {
 		didSet {
 			var topCorrection = (bounds.size.height - contentSize.height * zoomScale) / 2.0
 			topCorrection = max(0, topCorrection)

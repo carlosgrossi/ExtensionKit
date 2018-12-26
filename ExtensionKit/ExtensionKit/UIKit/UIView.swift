@@ -69,7 +69,7 @@ public extension UIView {
 	///   - attributes: attributes that the constraints should be applied at.
 	/// - Returns: An array with all constraints created
     @discardableResult
-	public func applyStandardConstraints(onSubview subview: UIView?, attributes: [NSLayoutAttribute] = [.top, .bottom, .left, .right], constants: [CGFloat] = []) -> [NSLayoutConstraint?] {
+	public func applyStandardConstraints(onSubview subview: UIView?, attributes: [NSLayoutConstraint.Attribute] = [.top, .bottom, .left, .right], constants: [CGFloat] = []) -> [NSLayoutConstraint?] {
 		var constraints: [NSLayoutConstraint?] = []
 		for (index, attribute) in attributes.enumerated() {
 			let constant = index < constants.count ? constants[index] : 0
@@ -96,8 +96,9 @@ public extension UIView {
 		return self.applyContraint(onView: self, attribute: .width, multiplier: multiplier, constant: width, priority: priority)
 	}
 	
+    //swiftlint:disable identifier_name
     @discardableResult
-	public func applyCentralizeConstraint(onView subview: UIView?, axis: [NSLayoutAttribute] = [.centerX, .centerY]) -> [NSLayoutConstraint] {
+	public func applyCentralizeConstraint(onView subview: UIView?, axis: [NSLayoutConstraint.Attribute] = [.centerX, .centerY]) -> [NSLayoutConstraint] {
 		var constraints: [NSLayoutConstraint] = []
 		for ax in axis {
 			if let constraint = applyContraint(onView: subview, attribute: ax, relatetBy: .equal, toItem: self) {
@@ -106,14 +107,15 @@ public extension UIView {
 		}
 		return constraints
 	}
+    //swiftlint:enable identifier_name
 	
     @discardableResult
 	public func applyContraint(onView
                             subview: UIView?,
-                            attribute: NSLayoutAttribute,
-                            relatetBy: NSLayoutRelation = .equal,
+                            attribute: NSLayoutConstraint.Attribute,
+                            relatetBy: NSLayoutConstraint.Relation = .equal,
                             toItem: Any? = nil,
-                            toAttribute: NSLayoutAttribute? = nil,
+                            toAttribute: NSLayoutConstraint.Attribute? = nil,
                             multiplier: CGFloat = 1.0,
                             constant: CGFloat = 0.0,
                             priority: Float = 1000.0) -> NSLayoutConstraint? {

@@ -25,10 +25,10 @@ public extension NSMutableAttributedString {
 			if range.location != NSNotFound {
 				switch atributeSearchType {
 				case .first:
-                    self.addAttribute(NSAttributedStringKey.foregroundColor, value: attributeValue, range: NSRange(location: range.location, length: searchLength))
+                    self.addAttribute(NSAttributedString.Key.foregroundColor, value: attributeValue, range: NSRange(location: range.location, length: searchLength))
 					return
 				case .all:
-                    self.addAttribute(NSAttributedStringKey.foregroundColor, value: attributeValue, range: NSRange(location: range.location, length: searchLength))
+                    self.addAttribute(NSAttributedString.Key.foregroundColor, value: attributeValue, range: NSRange(location: range.location, length: searchLength))
 				case .last:
 					rangeCollection.append(range)
 				}
@@ -40,7 +40,7 @@ public extension NSMutableAttributedString {
 		switch atributeSearchType {
 		case .last:
 			let indexOfLast = rangeCollection.count - 1
-            self.addAttribute(NSAttributedStringKey.foregroundColor, value: attributeValue, range: rangeCollection[indexOfLast])
+            self.addAttribute(NSAttributedString.Key.foregroundColor, value: attributeValue, range: rangeCollection[indexOfLast])
 		default:
 			break
 		}

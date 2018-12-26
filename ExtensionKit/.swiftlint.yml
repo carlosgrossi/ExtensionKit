@@ -4,6 +4,7 @@ disabled_rules: # rule identifiers to exclude from running
   - no_extension_access_modifier
   - number_separator
   - syntactic_sugar
+  - explicit_type_interface
 
 opt_in_rules: # some rules are only opt-in
   - empty_count
@@ -30,5 +31,5 @@ opt_in_rules: # some rules are only opt-in
 
 
 line_length:
-  warning: 190
+  warning: 200
   error: 250

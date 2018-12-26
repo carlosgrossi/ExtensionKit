@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension UINavigationController {
+extension UINavigationController {
 	
 	public var navigationBarSize: CGSize {
 		return navigationBar.frame.size
@@ -35,7 +35,7 @@ public extension UINavigationController {
 	
 	public func fadeTitle(to title: String, withDuration: TimeInterval = 0.1) {
 		let fadeTransition = CATransition()
-		fadeTransition.type = kCATransitionFade
+		fadeTransition.type = CATransitionType.fade
 		fadeTransition.duration = withDuration
 		self.navigationBar.layer.add(fadeTransition, forKey: "fadeText")
 		self.viewControllers.first?.navigationItem.title = title

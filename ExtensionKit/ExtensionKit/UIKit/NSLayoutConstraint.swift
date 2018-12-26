@@ -11,13 +11,13 @@ import Foundation
 public extension NSLayoutConstraint {
 	
 	public struct Constats {
-		var constants: [NSLayoutAttribute: CGFloat]
+		var constants: [NSLayoutConstraint.Attribute: CGFloat]
 		
-		public init(constants: [NSLayoutAttribute: CGFloat]) {
+		public init(constants: [NSLayoutConstraint.Attribute: CGFloat]) {
 			self.constants = constants
 		}
 		
-		public subscript(attribute: NSLayoutAttribute) -> CGFloat {
+		public subscript(attribute: NSLayoutConstraint.Attribute) -> CGFloat {
 			guard let value = constants[attribute] else {
 				return 0
 			}

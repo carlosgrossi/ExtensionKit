@@ -6,7 +6,7 @@
 //
 //
 
-public extension Array where Element:Equatable {
+public extension Array where Element: Equatable {
 	
 	public mutating func removeDuplicates() -> [Element] {
 		var result = [Element]()
