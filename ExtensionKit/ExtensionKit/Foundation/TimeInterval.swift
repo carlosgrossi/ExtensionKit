@@ -11,7 +11,7 @@ import Foundation
 public extension TimeInterval {
 	
 	/// Time interval duration in hours, minutes, seconds format
-	public var duration: String {
+	var duration: String {
         let seconds = Int(self) % 60
         let minutes = (Int(self) / 60) % 60
         let hours = (Int(self) / 3600)

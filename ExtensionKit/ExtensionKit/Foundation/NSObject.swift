@@ -15,7 +15,7 @@ public extension NSObject {
 	///
 	/// - Parameter key: The name of one of the receiver's properties.
 	/// - Returns: The value for the property identified by key.
-    public func safeValue<T>(forKey key: String) -> T? {
+    func safeValue<T>(forKey key: String) -> T? {
         let copy = Mirror(reflecting: self)
         for child in copy.children {
             if let label = child.label {
@@ -36,7 +36,7 @@ public extension NSObject {
 	/// - Parameters:
 	///   - value: The value for the property identified by key.
 	///   - key: The name of one of the receiver's properties.
-    public func setValue<T>(_ value: T, forKey key: String) {
+    func setValue<T>(_ value: T, forKey key: String) {
         let copy = Mirror(reflecting: self)
         for child in copy.children {
             if let label = child.label {

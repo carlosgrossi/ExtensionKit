@@ -19,7 +19,7 @@ public extension URLRequest {
 	
 	- returns: URLRequest ready to be used on a remote connection method
 	*/
-	public static func urlRequest(with url: URL, requestMethod: String? = nil, requestValues: [String: String]? = nil) -> URLRequest {
+	static func urlRequest(with url: URL, requestMethod: String? = nil, requestValues: [String: String]? = nil) -> URLRequest {
 		let mutableURLRequest = NSMutableURLRequest(url: url)
 		
 		if let requestMethod = requestMethod {

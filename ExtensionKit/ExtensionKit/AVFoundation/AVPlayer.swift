@@ -10,7 +10,7 @@ import AVFoundation
 
 public extension AVPlayer {
 	
-	public static func backgroundVideoView(_ videoName: String, ofType: String) -> (backgroundView: UIView?, avPlayer: AVPlayer?) {
+	static func backgroundVideoView(_ videoName: String, ofType: String) -> (backgroundView: UIView?, avPlayer: AVPlayer?) {
 		var backgroundView: UIView?
 		var avPlayer: AVPlayer?
 		

@@ -10,13 +10,13 @@ import Foundation
 
 public extension Date {
     
-    public static func timeInterval(_ doubleValue: Double) -> TimeInterval {
+    static func timeInterval(_ doubleValue: Double) -> TimeInterval {
         return doubleValue
     }
     
     // swiftlint:disable function_body_length
     // swiftlint:disable cyclomatic_complexity
-    public func timeAgo(usingNumericDates: Bool) -> String {
+    func timeAgo(usingNumericDates: Bool) -> String {
         let calendar = Calendar.current
         let now = Date()
         let earliest = (now as NSDate).earlierDate(self)

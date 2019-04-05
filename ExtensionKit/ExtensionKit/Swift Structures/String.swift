@@ -10,7 +10,7 @@ import UIKit
 
 public extension String {
 	
-	public func rangesOf(substring: String) -> [NSRange] {
+	func rangesOf(substring: String) -> [NSRange] {
 		let inputLength = self.count
 		
 		var rangesFound: [NSRange] = []
@@ -29,7 +29,7 @@ public extension String {
 		return []
 	}
 	
-	public func boundingRect(forFont font: UIFont, inView view: UIView) -> CGRect {
+	func boundingRect(forFont font: UIFont, inView view: UIView) -> CGRect {
 		let baseRect = CGSize(width: view.frame.size.width, height: CGFloat.greatestFiniteMagnitude)
         return self.boundingRect(with: baseRect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
 	}
