@@ -8,7 +8,7 @@
 
 public extension CGContext {
 	
-	public static func context(with cgImage: CGImage, size: CGSize, interpolationQuality: CGInterpolationQuality = .high) -> CGContext? {
+	static func context(with cgImage: CGImage, size: CGSize, interpolationQuality: CGInterpolationQuality = .high) -> CGContext? {
 		let colorSpace: CGColorSpace = CGColorSpaceCreateDeviceRGB()
 		let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.premultipliedLast.rawValue)
 		

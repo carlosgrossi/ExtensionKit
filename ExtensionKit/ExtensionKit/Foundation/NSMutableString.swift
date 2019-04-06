@@ -10,11 +10,11 @@ import Foundation
 
 public extension NSMutableAttributedString {
 	
-	public enum AtributeSearchType {
+	enum AtributeSearchType {
 		case first, all, last
 	}
 	
-	public func attributeRangeFor(_ searchString: String, attributeValue: AnyObject, atributeSearchType: AtributeSearchType) {
+	func attributeRangeFor(_ searchString: String, attributeValue: AnyObject, atributeSearchType: AtributeSearchType) {
 		let inputLength = self.string.count
 		let searchLength = searchString.count
 		var range = NSRange(location: 0, length: self.length)

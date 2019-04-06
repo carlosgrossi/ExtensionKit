@@ -31,7 +31,7 @@ public extension UIApplication {
 	func removeShortcutItem(_ item: UIApplicationShortcutItem) {
 		if let installedItems = shortcutItems?.filter({ $0.type == item.type }) {
 			for installedItem in installedItems.enumerated() {
-				if let installedItemIndex = shortcutItems?.index(of: installedItem.element) {
+				if let installedItemIndex = shortcutItems?.firstIndex(of: installedItem.element) {
 					shortcutItems?.remove(at: installedItemIndex)
 				}
 			}

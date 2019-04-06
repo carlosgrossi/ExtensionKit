@@ -11,7 +11,7 @@ import Foundation
 @available(iOS 9.0, *)
 public extension NSBundleResourceRequest {
 	
-	public static func beginAccessingResources(with tags: Set<String>, progressObserver: NSObject? = nil, completion: (() -> Void)? = nil) -> NSBundleResourceRequest {
+	static func beginAccessingResources(with tags: Set<String>, progressObserver: NSObject? = nil, completion: (() -> Void)? = nil) -> NSBundleResourceRequest {
 		let resourceRequest = NSBundleResourceRequest(tags: tags)
 		resourceRequest.conditionallyBeginAccessingResources { (resourcesAvailable) in
 			if !resourcesAvailable {

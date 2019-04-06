@@ -10,7 +10,7 @@ import Foundation
 
 public extension UICollectionView {
 	
-	public func adjustLayoutToCenter(usefulArea: CGFloat, itemWidth: CGFloat) {
+	func adjustLayoutToCenter(usefulArea: CGFloat, itemWidth: CGFloat) {
 		let numberOfItems = self.numberOfItems(inSection: 0)
 		let frameWidth = frame.width
 		let margin: CGFloat = 0.0 //numberOfItems % 2 == 0 ? 8.0 : -8.0
@@ -28,7 +28,7 @@ public extension UICollectionView {
 		(self.collectionViewLayout as? UICollectionViewFlowLayout)?.minimumLineSpacing = itemSpacing
 	}
 	
-	public func proportionalItemSize(forNumberOfCells numberOfCells: Int, sizeRatio: CGFloat) -> CGSize {
+	func proportionalItemSize(forNumberOfCells numberOfCells: Int, sizeRatio: CGFloat) -> CGSize {
 		let spacingSize: CGFloat = (self.collectionViewLayout as? UICollectionViewFlowLayout)?.minimumInteritemSpacing ?? 0.0
 		let sectionInset = (self.collectionViewLayout as? UICollectionViewFlowLayout)?.sectionInset ?? UIEdgeInsets.zero
 		

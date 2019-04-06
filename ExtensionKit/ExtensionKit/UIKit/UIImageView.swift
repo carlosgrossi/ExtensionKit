@@ -12,7 +12,7 @@ let imageCache = NSCache<AnyObject, AnyObject>()
 
 public extension UIImageView {
 	
-	public var asyncImage: UIImage? {
+	var asyncImage: UIImage? {
 		get { return self.image }
 		set {
 			layer.contents = nil
@@ -46,7 +46,7 @@ public extension UIImageView {
 		return nil
 	}
 	
-	public convenience init(asyncImage: UIImage?) {
+	convenience init(asyncImage: UIImage?) {
 		self.init()
 		self.asyncImage = asyncImage
 	}
@@ -61,7 +61,7 @@ public extension UIImageView {
 	- Parameter toImage: The final image on the cross fade animation
 	- Parameter duration: The duration in seconds of the animation
 	*/
-	public func crossFade(_ toImage: UIImage?, duration: CFTimeInterval) {
+	func crossFade(_ toImage: UIImage?, duration: CFTimeInterval) {
 		let crossFade = CABasicAnimation(keyPath: "contents")
 		crossFade.duration = duration
 		crossFade.fromValue = self.image?.cgImage
@@ -75,7 +75,7 @@ public extension UIImageView {
 	
 	- Parameter maskImage: Image that will be used as a mask
 	*/
-	public func maskImage(_ maskImage: UIImage) {
+	func maskImage(_ maskImage: UIImage) {
 		guard let image = self.image else { return }
 		guard let maskRef = maskImage.cgImage else { return }
 		guard let dataProvider = maskRef.dataProvider else { return }
@@ -100,7 +100,7 @@ public extension UIImageView {
 	- Parameter imageURL: URL for an image on a remote server
 	- Parameter crossfadin: Set image with crossfade animation
 	*/
-	public func setImage(from imageURL: URL?, crossfading: Bool = true, duration: TimeInterval = 1, completitionHandler:(() -> Void)? = nil) {
+	func setImage(from imageURL: URL?, crossfading: Bool = true, duration: TimeInterval = 1, completitionHandler:(() -> Void)? = nil) {
 		guard let imageURL = imageURL else { completitionHandler?(); return }
 		if let cachedImage = imageCache.object(forKey: imageURL.absoluteString as AnyObject) as? UIImage {
 			if crossfading {
@@ -136,7 +136,7 @@ public extension UIImageView {
 		}
 	}
 	
-	public func setImage(from imageData: Data?, imageCacheKey: String, crossfading: Bool = true, duration: TimeInterval = 1, completitionHandler:(() -> Void)? = nil) {
+	func setImage(from imageData: Data?, imageCacheKey: String, crossfading: Bool = true, duration: TimeInterval = 1, completitionHandler:(() -> Void)? = nil) {
 		guard let imageData = imageData else { completitionHandler?(); return }
 		
 		if let cachedImage = imageCache.object(forKey: imageCacheKey as AnyObject) as? UIImage {

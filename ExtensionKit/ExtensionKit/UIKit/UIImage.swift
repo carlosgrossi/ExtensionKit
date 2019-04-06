@@ -10,7 +10,7 @@ import AVFoundation
 
 public extension UIImage {
 	
-	public convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
+	convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
 		let rect = CGRect(origin: .zero, size: size)
 		UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
 		color.setFill()
@@ -22,7 +22,7 @@ public extension UIImage {
 		self.init(cgImage: cgImage)
 	}
 	
-	public static func maskedImage(_ image: UIImage, withMask maskImage: UIImage) -> UIImage? {
+	static func maskedImage(_ image: UIImage, withMask maskImage: UIImage) -> UIImage? {
 		guard let maskRef = maskImage.cgImage else { return nil }
 		guard let dataProvider = maskRef.dataProvider else { return nil }
 		guard let mask = CGImage(maskWidth: maskRef.width,
@@ -38,7 +38,7 @@ public extension UIImage {
 		return UIImage(cgImage: maskedImageRef)
 	}
 	
-	public func scaledImage(byFactor factor: Int) -> UIImage? {
+	func scaledImage(byFactor factor: Int) -> UIImage? {
 		guard let cgImage = self.cgImage else { return nil }
 		guard factor > 0 else { return nil }
 		
@@ -46,19 +46,19 @@ public extension UIImage {
 		return context?.makeImage().flatMap { UIImage(cgImage: $0) }
 	}
 	
-	public func scaledImage(byFixedWidth width: Int) -> UIImage? {
+	func scaledImage(byFixedWidth width: Int) -> UIImage? {
 		guard let cgImage = self.cgImage else { return nil }
 		let context = CGContext.context(with: cgImage, size: CGSize(width: width, height: ( cgImage.height * width ) / cgImage.width ))
 		return context?.makeImage().flatMap { UIImage(cgImage: $0) }
 	}
 	
-	public func scaledImage(byFixedHeight height: Int) -> UIImage? {
+	func scaledImage(byFixedHeight height: Int) -> UIImage? {
 		guard let cgImage = self.cgImage else { return nil }
 		let context = CGContext.context(with: cgImage, size: CGSize(width: ( cgImage.width * height ) / cgImage.height, height: height))
 		return context?.makeImage().flatMap { UIImage(cgImage: $0) }
 	}
 	
-	public func scaledImage(inRect rect: CGRect) -> UIImage? {
+	func scaledImage(inRect rect: CGRect) -> UIImage? {
 		guard let cgImage = self.cgImage else { return nil }
 		let scaleRect = AVMakeRect(aspectRatio: self.size, insideRect: rect)
 		let context = CGContext.context(with: cgImage, size: scaleRect.size)

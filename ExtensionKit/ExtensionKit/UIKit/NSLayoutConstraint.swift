@@ -10,7 +10,7 @@ import Foundation
 
 public extension NSLayoutConstraint {
 	
-	public struct Constats {
+	struct Constats {
 		var constants: [NSLayoutConstraint.Attribute: CGFloat]
 		
 		public init(constants: [NSLayoutConstraint.Attribute: CGFloat]) {
