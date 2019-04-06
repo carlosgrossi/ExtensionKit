@@ -10,7 +10,7 @@ import Foundation
 
 public extension UITableView {
 	
-	public func setBackgroundMessage(with text: String, font: UIFont? = nil) {
+	func setBackgroundMessage(with text: String, font: UIFont? = nil) {
 		backgroundView = UILabel(text: text, font: font)
 	}
 	

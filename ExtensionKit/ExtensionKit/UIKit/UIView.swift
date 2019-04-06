@@ -11,24 +11,24 @@ import Foundation
 public extension UIView {
 	
     // swiftlint:disable identifier_name
-	public var x: CGFloat {
+	var x: CGFloat {
         return frame.origin.x
 	}
 	
-	public var y: CGFloat {
+	var y: CGFloat {
 		return frame.origin.y
 	}
     // swiftlint:enable identifier_name
 	
-	public var width: CGFloat {
+	var width: CGFloat {
 		return frame.width
 	}
 	
-	public var height: CGFloat {
+	var height: CGFloat {
 		return frame.height
 	}
 	
-	@IBInspectable public var cornerRadius: CGFloat {
+	@IBInspectable var cornerRadius: CGFloat {
 		get {
 			return layer.cornerRadius
 		}
@@ -38,7 +38,7 @@ public extension UIView {
 		}
 	}
 	
-	@IBInspectable public var borderWidth: CGFloat {
+	@IBInspectable var borderWidth: CGFloat {
 		get {
 			return layer.borderWidth
 		}
@@ -47,7 +47,7 @@ public extension UIView {
 		}
 	}
 	
-	@IBInspectable public var borderColor: UIColor? {
+	@IBInspectable var borderColor: UIColor? {
 		get {
 			return UIColor(cgColor: (layer.borderColor ?? UIColor.clear.cgColor))
 		}
@@ -56,7 +56,7 @@ public extension UIView {
 		}
 	}
 	
-	public func addSubview(view: UIView?) {
+	func addSubview(view: UIView?) {
 		guard let view = view else { return }
 		self.addSubview(view)
 	}
@@ -69,7 +69,7 @@ public extension UIView {
 	///   - attributes: attributes that the constraints should be applied at.
 	/// - Returns: An array with all constraints created
     @discardableResult
-	public func applyStandardConstraints(onSubview subview: UIView?, attributes: [NSLayoutConstraint.Attribute] = [.top, .bottom, .left, .right], constants: [CGFloat] = []) -> [NSLayoutConstraint?] {
+	func applyStandardConstraints(onSubview subview: UIView?, attributes: [NSLayoutConstraint.Attribute] = [.top, .bottom, .left, .right], constants: [CGFloat] = []) -> [NSLayoutConstraint?] {
 		var constraints: [NSLayoutConstraint?] = []
 		for (index, attribute) in attributes.enumerated() {
 			let constant = index < constants.count ? constants[index] : 0
@@ -79,7 +79,7 @@ public extension UIView {
 	}
 	
     @discardableResult
-	public func applySizeConstraint(size: CGSize, multiplier: CGFloat = 1, priority: Float = 1000) -> [NSLayoutConstraint?] {
+	func applySizeConstraint(size: CGSize, multiplier: CGFloat = 1, priority: Float = 1000) -> [NSLayoutConstraint?] {
 		var constraints: [NSLayoutConstraint?] = []
 		constraints.append(applyHeightConstraint(height: size.height))
 		constraints.append(applyWidthConstraint(width: size.width))
@@ -87,18 +87,18 @@ public extension UIView {
 	}
 	
     @discardableResult
-	public func applyHeightConstraint(height: CGFloat, multiplier: CGFloat = 1, priority: Float = 1000) -> NSLayoutConstraint? {
+	func applyHeightConstraint(height: CGFloat, multiplier: CGFloat = 1, priority: Float = 1000) -> NSLayoutConstraint? {
 		return self.applyContraint(onView: self, attribute: .height, multiplier: multiplier, constant: height, priority: priority)
 	}
 	
     @discardableResult
-	public func applyWidthConstraint(width: CGFloat, multiplier: CGFloat = 1, priority: Float = 1000) -> NSLayoutConstraint? {
+	func applyWidthConstraint(width: CGFloat, multiplier: CGFloat = 1, priority: Float = 1000) -> NSLayoutConstraint? {
 		return self.applyContraint(onView: self, attribute: .width, multiplier: multiplier, constant: width, priority: priority)
 	}
 	
     //swiftlint:disable identifier_name
     @discardableResult
-	public func applyCentralizeConstraint(onView subview: UIView?, axis: [NSLayoutConstraint.Attribute] = [.centerX, .centerY]) -> [NSLayoutConstraint] {
+	func applyCentralizeConstraint(onView subview: UIView?, axis: [NSLayoutConstraint.Attribute] = [.centerX, .centerY]) -> [NSLayoutConstraint] {
 		var constraints: [NSLayoutConstraint] = []
 		for ax in axis {
 			if let constraint = applyContraint(onView: subview, attribute: ax, relatetBy: .equal, toItem: self) {
@@ -110,15 +110,15 @@ public extension UIView {
     //swiftlint:enable identifier_name
 	
     @discardableResult
-	public func applyContraint(onView
-                            subview: UIView?,
-                            attribute: NSLayoutConstraint.Attribute,
-                            relatetBy: NSLayoutConstraint.Relation = .equal,
-                            toItem: Any? = nil,
-                            toAttribute: NSLayoutConstraint.Attribute? = nil,
-                            multiplier: CGFloat = 1.0,
-                            constant: CGFloat = 0.0,
-                            priority: Float = 1000.0) -> NSLayoutConstraint? {
+	func applyContraint(
+        onView subview: UIView?,
+        attribute: NSLayoutConstraint.Attribute,
+        relatetBy: NSLayoutConstraint.Relation = .equal,
+        toItem: Any? = nil,
+        toAttribute: NSLayoutConstraint.Attribute? = nil,
+        multiplier: CGFloat = 1.0,
+        constant: CGFloat = 0.0,
+        priority: Float = 1000.0) -> NSLayoutConstraint? {
 		
 		guard let subview = subview else { return nil }
 		subview.translatesAutoresizingMaskIntoConstraints = false
@@ -132,7 +132,7 @@ public extension UIView {
 		return constraint
 	}
 	
-	public func roundCorners(_ roundedCorners: UIRectCorner, offset: CGRect, cornerRadius: Int) {
+	func roundCorners(_ roundedCorners: UIRectCorner, offset: CGRect, cornerRadius: Int) {
 		var frame = self.frame
 		frame.origin.x += offset.origin.x
 		frame.origin.y += offset.origin.y
@@ -147,7 +147,7 @@ public extension UIView {
 		layer.mask = maskLayer
 	}
 	
-	public func shake(duration: CFTimeInterval, repeatCount: Float, autoreverses: Bool, xOffset: CGFloat, yOffset: CGFloat, completion:(() -> Void)? = nil) {
+	func shake(duration: CFTimeInterval, repeatCount: Float, autoreverses: Bool, xOffset: CGFloat, yOffset: CGFloat, completion:(() -> Void)? = nil) {
 		CATransaction.begin()
 		CATransaction.setCompletionBlock(completion)
 		
@@ -162,7 +162,7 @@ public extension UIView {
 		CATransaction.commit()
 	}
 	
-	public func fade(to alpha: CGFloat, duration: TimeInterval = 0.5, removingFromSuperview: Bool = false, completion: ((Bool) -> Void)? = nil) {
+	func fade(to alpha: CGFloat, duration: TimeInterval = 0.5, removingFromSuperview: Bool = false, completion: ((Bool) -> Void)? = nil) {
         // swiftlint:disable multiple_closures_with_trailing_closure
 		UIView.animate(withDuration: duration, animations: {
 			self.alpha = alpha
@@ -174,13 +174,13 @@ public extension UIView {
         // swiftlint:enable multiple_closures_with_trailing_closure
 	}
 	
-	public func roundedCorners(cornerRadius: CGFloat, borderWidth: CGFloat = 0.0, borderColor: UIColor = .black) {
+	func roundedCorners(cornerRadius: CGFloat, borderWidth: CGFloat = 0.0, borderColor: UIColor = .black) {
 		self.cornerRadius = cornerRadius
 		self.borderWidth = borderWidth
 		self.borderColor = borderColor
 	}
 	
-	public func addTapToKeyboadDismiss() {
+	func addTapToKeyboadDismiss() {
 		let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
 		tapGestureRecognizer.cancelsTouchesInView = false
 		self.addGestureRecognizer(tapGestureRecognizer)
@@ -190,7 +190,7 @@ public extension UIView {
 		self.endEditing(true)
 	}
 	
-    public func taggedSubviews() -> Dictionary<Int, UIView> {
+    func taggedSubviews() -> Dictionary<Int, UIView> {
         var taggedSubviews: Dictionary<Int, UIView> = Dictionary()
         for subview in self.subviews.filter({ $0.tag != 0 }) {
             taggedSubviews.updateValue(subview, forKey: subview.tag)
@@ -198,7 +198,7 @@ public extension UIView {
         return taggedSubviews
     }
     
-    public func firstAvailableTag() -> Int {
+    func firstAvailableTag() -> Int {
         var availableTag = Int.max
         let taggedSubviews = self.taggedSubviews()
         while taggedSubviews[availableTag] != nil {
